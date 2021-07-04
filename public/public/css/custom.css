@@ -1,0 +1,556 @@
+/*
+    Author: iyes
+    Author URL: https://lecturerdigital.com
+*/
+
+/*------------------------------------------------------------------
+    Top navigation
+-------------------------------------------------------------------*/
+.header_meta {
+	    background-color: #f0f0f0;
+}
+#top_navigation {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block !important;
+    float: left;
+    margin: 5px 5px
+}
+#top_navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+#top_navigation .top_navigation {
+    position: relative
+}
+#top_navigation .top_navigation > li {
+    float: left;
+    display: block
+}
+#top_navigation .top_navigation > li > a {
+    border-right: 1px solid #ddd;
+    padding: 0px 10px;
+    line-height: 16px;
+    position: relative;
+    display: block
+}
+#top_navigation .top_navigation > li:first-child > a {
+    padding-left: 0
+}
+#top_navigation .top_navigation > li:last-child > a {
+    border-right: 0
+}
+#top_navigation .top_navigation > li:hover > a,
+#top_navigation .top_navigation > li.current-menu-item > a {
+    color: #111
+}
+#top_navigation .top_navigation ul.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-width: 240px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+#top_navigation .top_navigation ul.sub-menu li {
+    position: relative;
+    border-bottom: 1px solid #f5f5f5
+}
+#top_navigation .top_navigation ul.sub-menu li:last-child {
+    border-bottom: 0
+}
+#top_navigation .top_navigation ul.sub-menu li a {
+    display: block;
+    padding: 5px 10px
+}
+#top_navigation .top_navigation ul.sub-menu li a:hover {
+    color: #111
+}
+#top_navigation .top_navigation li:hover > ul.sub-menu {
+    display: block
+}
+#top_navigation .top_navigation ul.sub-menu ul.sub-menu {
+    left: 100%;
+    top: 0
+}
+#top_navigation .top_navigation > li > a span:after {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "FontAwesome";
+    content: "\f0d7";
+    padding-left: 5px;
+    font-size: 10px;
+    color: #999
+}
+#top_navigation .top_navigation ul.sub-menu li a span:after {
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "FontAwesome";
+    content: "\f0da";
+    padding-left: 5px;
+    font-size: 10px;
+    color: #999
+}
+
+/*------------------------------------------------------------------
+    5. Top navigation
+-------------------------------------------------------------------*/
+.toggle_top_navigation {
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    background-color: #111
+}
+
+/*------------------------------------------------------------------
+    5.1 Social links
+-------------------------------------------------------------------*/
+ul.header_social_links {
+    float: right;
+    font-size: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0
+}
+ul.header_social_links li {
+    float: left;
+    display: block
+}
+ul.header_social_links li a {
+    text-transform: uppercase;
+    border-right: 1px solid #ddd;
+    padding: 0px 10px;
+    line-height: 16px;
+    position: relative;
+    display: block
+}
+ul.header_social_links > li:last-child > a {
+    border-right: 0;
+    padding-right: 0
+}
+ul.header_social_links li i {}
+
+/*------------------------------------------------------------------
+    Main navigation
+-------------------------------------------------------------------*/
+.header_menu {
+	    background-color: #1a77b8;
+}
+#main_navigation {
+    display: block !important
+}
+#main_navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+#main_navigation .main_navigation {
+    position: relative
+}
+#main_navigation .main_navigation > li {
+    float: left;
+    display: block
+}
+#main_navigation .main_navigation > li > a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    position: relative;
+    display: block
+}
+#main_navigation .main_navigation > li:hover > a,
+#main_navigation .main_navigation > li.current-menu-item > a {
+    background-color: #58ccff;
+    color: #111;
+	border-bottom: solid 1px #cd9218;
+}
+#main_navigation .main_navigation ul.sub-menu {
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    min-width: 240px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+#main_navigation .main_navigation ul.sub-menu li {
+    position: relative;
+    border-bottom: 1px solid #f5f5f5
+}
+#main_navigation .main_navigation ul.sub-menu li:last-child {
+    border-bottom: 0
+}
+#main_navigation .main_navigation ul.sub-menu li a {
+    display: block;
+    padding: 5px 15px
+}
+#main_navigation .main_navigation li:hover > ul.sub-menu {
+    display: block
+}
+#main_navigation .main_navigation ul.sub-menu li:hover > a {}
+#main_navigation .main_navigation ul.sub-menu ul.sub-menu {
+    left: 100%;
+    top: 0
+}
+#main_navigation .main_navigation > li > a span:after {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "FontAwesome";
+    content: "\f0d7";
+    padding-left: 5px;
+    font-size: 8px;
+    color: #ddd
+}
+#main_navigation .main_navigation ul.sub-menu li a span:after {
+    position: absolute;
+    right: 15px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "FontAwesome";
+    content: "\f0da";
+    padding-left: 5px;
+    font-size: 10px;
+    color: #ddd
+}
+#main_navigation .main_navigation ul.dt_mega_menu {
+    display: none;
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    left: 0;
+    padding: 30px 10px 0 10px;
+    width: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+#main_navigation .main_navigation li:hover > ul.dt_mega_menu {
+    display: block
+}
+#main_navigation .main_navigation ul.dt_mega_menu .widget {
+    float: left;
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+/*------------------------------------------------------------------
+    7.4 Breaking news
+-------------------------------------------------------------------*/
+.breaking_news {
+    padding: 5px 0;
+    font-size: 12px;
+    height: 34px;
+    text-transform: uppercase;
+    color: #111;
+    overflow: hidden;
+    background-color: #f0f0f0
+}
+.breaking_news .container {}
+.breaking_news_title {
+    width: 110px;
+    text-align: center;
+    float: left;
+    /* border-right: 1px solid #ddd; */
+    background-color: #e71c24;
+    color: #fff;
+}
+.breaking_news_container {
+    float: left;
+    padding-left: 10px
+}
+.breaking_news_container .owl-item {
+    white-space: nowrap;
+    overflow: hidden
+}
+.breaking_news_container a {
+    color: #666
+}
+.breaking_news_container a:hover {
+    text-decoration: underline;
+    color: #111
+}
+
+/*------------------------------------------------------------------
+    3.9 Owl carousel (core)
+-------------------------------------------------------------------*/
+.owl-carousel .owl-wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0
+}
+.owl-carousel {
+    display: none;
+    position: relative;
+   /* width: 100%; */
+    -ms-touch-action: pan-y
+}
+.owl-carousel .owl-wrapper {
+    display: none;
+    position: relative;
+    -webkit-transform: translate3d(0px, 0px, 0px)
+}
+.owl-carousel .owl-wrapper-outer {
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    -webkit-transition: height 500ms ease-in-out;
+    -moz-transition: height 500ms ease-in-out;
+    -ms-transition: height 500ms ease-in-out;
+    -o-transition: height 500ms ease-in-out;
+    transition: height 500ms ease-in-out
+}
+.owl-carousel .owl-item {
+    float: left
+}
+.owl-carousel .owl-item img {
+    width: 100%
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+    cursor: pointer
+}
+.owl-controls {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+.grabbing {
+    cursor: url(../img/grabbing.png) 8 8, move
+}
+.owl-item.loading{
+    min-height: 150px;
+    background: url(../img/AjaxLoader.gif) no-repeat center center
+}
+div.custom_loading {
+    min-height: 150px;
+    width: 150px;
+    z-index: 99;
+    background: url(../img/AjaxLoader.gif) no-repeat center center
+}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0)
+}
+
+/*------------------------------------------------------------------
+    2.4 Sidebar
+-------------------------------------------------------------------*/
+.sidebar_area {}
+.sidebar_area .widget:last-child {
+    margin-bottom: 0
+}
+.widget {
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 22px;
+	border: #f5f5f5 solid 1px;
+    border-top: none;
+}
+
+.widget ul,
+.widget ol {
+    list-style: none;
+    padding: 0
+}
+.widget select,
+.widget input[type="search"],
+.widget input[type="text"] {
+    font-size: 14px;
+    line-height: 22px
+}
+.widget_title {
+	background-color: #0061a8;
+	padding: 7px 10px 6px 10px;
+	margin-top: 10px;
+}
+
+/*------------------------------------------------------------------
+    2.4.12 Banner 300x250 widget
+-------------------------------------------------------------------*/
+.widget_banner_300x250 {
+    background-color: #f0f0f0;
+    padding: 14px;
+    text-align: center
+}
+.widget_banner_300x250 a {
+    margin-bottom: 14px;
+    display: block
+}
+.widget_banner_300x250 a:last-child {
+    margin-bottom: 0
+}
+.widget_banner_300x250 {
+    max-width: 100%
+}
+
+/*------------------------------------------------------------------
+    2.4.13 Banner 125x125 widget
+-------------------------------------------------------------------*/
+.widget_banner_125x125:before,
+.widget_banner_125x125:after {
+    content: " ";
+    display: table
+}
+.widget_banner_125x125:after {
+    clear: both
+}
+.widget_banner_125x125 .banner {
+    padding: 14px;
+    background-color: #f5f5f5;
+    display: block;
+    float: left;
+    margin: 5px
+}
+#footer .widget_banner_125x125 .banner {
+    background-color: #444
+}
+.widget_banner_125x125 .banner img {
+    max-width: 100%
+}
+
+/*------------------------------------------------------------------
+    2.4.14 Timeline widget
+-------------------------------------------------------------------*/
+.widget_timeline_posts {
+}
+.widget_timeline_posts .item {
+    position: relative;
+    padding-left: 57px;
+    margin-bottom: 5px
+}
+.widget_timeline_posts span.date,
+.widget_timeline_posts span.time {
+    text-transform: uppercase;
+    font-size: 10px;
+    position: absolute;
+    color: #666;
+    left: 0;
+    line-height: 1;
+    width: 45px;
+    text-align: right
+}
+.widget_timeline_posts span.date {
+    top: 4px
+}
+.widget_timeline_posts span.time {
+    top: 18px;
+    font-size: 10px;
+    color: #999
+}
+.widget_timeline_posts .item .timeline_content {
+    border-left: 2px solid #f0f0f0;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    position: relative
+}
+#footer .widget_timeline_posts .item .timeline_content {
+    border-left: 2px solid #333
+}
+.widget_timeline_posts .item:last-child .timeline_content {
+    border-left: none;
+    padding-left: 15px
+}
+#footer .widget_timeline_posts .item:last-child .timeline_content {
+    border-left: none;
+    padding-left: 15px
+}
+.widget_timeline_posts .item:last-child .timeline_content .pin_holder {
+    left: -6px
+}
+.widget_timeline_posts .timeline_content .pin_holder {
+    height: 15px;
+    width: 14px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+    left: -8px;
+    top: 0
+}
+#footer .widget_timeline_posts .timeline_content .pin_holder,
+#footer .widget_timeline_posts .timeline_content .pin_holder .inside {
+    background-color: #111
+}
+.widget_timeline_posts .timeline_content .pin_holder .inside {
+    margin-top: 5px;
+    margin-left: 2px;
+    height: 10px;
+    width: 10px;
+    display: block;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 2px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s
+}
+.widget_timeline_posts .timeline_content h3 {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.widget_timeline_posts .timeline_content h3 a {
+	color: #0061a8;
+}
+
+
+@media (min-width: 1200px) {
+  .breaking_news_container {
+		width: 800px;
+	}
+}
+
+@media (max-width: 767px) {
+  .breaking_news_container {
+		width: 500px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .breaking_news_container {
+		width: 500px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .breaking_news_container {
+		width: 600px;
+	}
+}
+
+.td-container {
+    width: 1068px;
+    margin-right: auto;
+    margin-left: auto;
+}

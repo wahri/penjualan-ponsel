@@ -1,0 +1,84 @@
+<?php if (!empty($images)) {
+                                    $count_image = count($images);
+                                    for ($index = 0; $index < 5; $index++) {
+                                        if ($index < $count_image) {
+                                            ?>
+                                            <div class="col-sm-2 text-center">
+                                                    <img
+                                                        src="<?php echo $images[$index]->url; ?>"
+                                                        id="addImageItem-<?php echo $index; ?>"
+                                                        alt="..." class="img-thumbnail  box-add-image-item"
+                                                        data-href=""
+                                                        href="<?php echo site_url('admin/produk/modal_fiture_library/' . $i); ?>"
+                                                        data-toggle="modal" data-target="#modalAddMedia">
+                                                    <div class="caption">
+                                                        <a id="btnImageItem-<?php echo $index; ?>"
+                                                           data-id="<?php echo $images[$index]->id; ?>"
+                                                           class="btn btn-set-main-image">Set Main
+                                                            image</a>
+                                                    </div>
+                                                    <input type="hidden" id="inputHiddenImage-<?php echo $index; ?>"
+                                                           name="images[]"
+                                                           value="<?php echo $images[$index]->id; ?>">1
+                                                
+                                            </div>
+                                            <?php
+                                        } else { ?>
+                                            <div class="col-sm-2 text-center">
+                                               
+                                                    <img
+                                                        src="<?php echo base_url('upload/system/add_image.jpg'); ?>"
+                                                        id="addImageItem-<?php echo $index; ?>"
+                                                        alt="..." class="img-thumbnail  box-add-image-item"
+                                                        data-href=""
+                                                        href="<?php echo site_url('admin/produk/modal_fiture_library/' . $i); ?>"
+                                                        data-toggle="modal" data-target="#modalAddMedia">
+                                                    <div class="caption">
+                                                        <a id="btnImageItem-<?php echo $index; ?>" data-id=""
+                                                           class="btn btn-set-main-image">Set Main
+                                                            image</a>
+                                                    </div>
+                                                    <input type="hidden" id="inputHiddenImage-<?php echo $index; ?>"
+                                                           name="images[]" value="">2
+                                              
+                                            </div>
+                                            <?php
+                                        }
+                                    }
+                                } else { ?>
+                                    <?php for ($i = 0; $i < 5; $i++) { ?>
+                                        <div class="col-sm-2 text-center">
+                                                <img
+                                                    src="<?php echo base_url('upload/system/add_image.jpg'); ?>"
+                                                    id="addImageItem-<?php echo $i; ?>"
+                                                    alt="..." class="img-thumbnail  box-add-image-item"
+                                                    data-href=""
+                                                    href="<?php echo site_url('admin/produk/modal_fiture_library/' . $i); ?>"
+                                                    data-toggle="modal" data-target="#modalAddMedia">
+                                                <div class="">
+                                                    <a id="btnImageItem-<?php echo $i; ?>" data-id="<?php echo $i; ?>" class="btn btn-set-main-image"><small>Set Main image</small></a>
+                                                </div>
+                                                <input type="hidden" id="inputHiddenImage-<?php echo $i; ?>" name="images[]" value="">  3
+                                        </div>
+                                    <?php } ?>
+                                <?php } ?>
+								
+								
+								
+								
+								<div class="col-sm-2 box-image-item" id="box-image-item-<?php echo $image['id']; ?>">
+            <div class="thumbnail image-item-list">
+                <img
+                    src="<?php echo base_url($this->costume->get_thumbnail($image['thumbnails'],'100x90')->row()->url); ?>"
+                    alt="..." class="img-thumbnail  box-add-image-item">
+                <div class="caption">
+                    <a data-id="<?php echo $image['id']; ?>"
+                       class="btn btn-xs btn-primary btn-set-main-image <?php echo($image_thumb == $image['id'] ? 'disabled' : ''); ?>">Set
+                        Utama</a>
+                    <a data-box="box-image-item-<?php echo $image['id']; ?>"
+                       data-id="<?php echo $image['id']; ?>"
+                       class="btn btn-xs btn-danger btn-delete-image-item">Hapus</a>
+                </div>
+                <input type="hidden" name="images[]" value="<?php echo $image['id']; ?>">
+            </div>
+        </div>
